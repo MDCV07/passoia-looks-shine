@@ -1,4 +1,11 @@
-import { CreditCard, DollarSign, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import mastercardImg from "@/assets/mastercard.png";
+import visaImg from "@/assets/visa.png";
+import pixImg from "@/assets/pix.png";
+import boletoImg from "@/assets/boleto.png";
+import instagramImg from "@/assets/instagram.png";
+import facebookImg from "@/assets/facebook.png";
+import youtubeImg from "@/assets/youtube.png";
+import linkedinImg from "@/assets/linkedin.png";
 
 const Footer = () => {
   const atendimentoLinks = [
@@ -33,17 +40,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-gold-accent">Formas de pagamento</h3>
             <div className="flex flex-wrap gap-3">
-              <div className="bg-background rounded p-2 flex items-center justify-center w-12 h-8">
-                <CreditCard className="w-6 h-6 text-foreground" />
+              <div className="bg-background rounded p-2 flex items-center justify-center w-16 h-10">
+                <img src={mastercardImg} alt="Mastercard" className="w-full h-full object-contain" />
               </div>
-              <div className="bg-background rounded p-2 flex items-center justify-center w-12 h-8">
-                <CreditCard className="w-6 h-6 text-foreground" />
+              <div className="bg-background rounded p-2 flex items-center justify-center w-16 h-10">
+                <img src={visaImg} alt="Visa" className="w-full h-full object-contain" />
               </div>
-              <div className="bg-background rounded p-2 flex items-center justify-center w-12 h-8">
-                <DollarSign className="w-6 h-6 text-foreground" />
+              <div className="bg-background rounded p-2 flex items-center justify-center w-16 h-10">
+                <img src={pixImg} alt="PIX" className="w-full h-full object-contain" />
               </div>
-              <div className="bg-background rounded p-2 flex items-center justify-center w-12 h-8">
-                <span className="text-xs font-bold text-foreground">PIX</span>
+              <div className="bg-background rounded p-2 flex items-center justify-center w-16 h-10">
+                <img src={boletoImg} alt="Boleto" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
@@ -54,31 +61,31 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="bg-background rounded-full p-2 hover:bg-gold-accent transition-colors duration-300 group"
+                className="w-10 h-10 rounded-full overflow-hidden hover:opacity-80 transition-opacity duration-300"
                 aria-label="Instagram"
               >
-                <Instagram className="w-6 h-6 text-foreground group-hover:text-background" />
+                <img src={instagramImg} alt="Instagram" className="w-full h-full object-cover" />
               </a>
               <a
                 href="#"
-                className="bg-background rounded-full p-2 hover:bg-gold-accent transition-colors duration-300 group"
+                className="w-10 h-10 rounded-full overflow-hidden hover:opacity-80 transition-opacity duration-300"
                 aria-label="Facebook"
               >
-                <Facebook className="w-6 h-6 text-foreground group-hover:text-background" />
+                <img src={facebookImg} alt="Facebook" className="w-full h-full object-cover" />
               </a>
               <a
                 href="#"
-                className="bg-background rounded-full p-2 hover:bg-gold-accent transition-colors duration-300 group"
+                className="w-10 h-10 rounded-full overflow-hidden hover:opacity-80 transition-opacity duration-300"
                 aria-label="YouTube"
               >
-                <Youtube className="w-6 h-6 text-foreground group-hover:text-background" />
+                <img src={youtubeImg} alt="YouTube" className="w-full h-full object-cover" />
               </a>
               <a
                 href="#"
-                className="bg-background rounded-full p-2 hover:bg-gold-accent transition-colors duration-300 group"
+                className="w-10 h-10 rounded-full overflow-hidden hover:opacity-80 transition-opacity duration-300"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-6 h-6 text-foreground group-hover:text-background" />
+                <img src={linkedinImg} alt="LinkedIn" className="w-full h-full object-cover" />
               </a>
             </div>
           </div>

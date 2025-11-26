@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Star } from "lucide-react";
 import abertoImg from "@/assets/aberto.png";
 import fechadoImg from "@/assets/fechado.png";
 import batomImg from "@/assets/batom.png";
@@ -11,6 +10,7 @@ import cinzaColorImg from "@/assets/cinza-color.png";
 import vermelhoColorImg from "@/assets/vermelho-color.png";
 import bordoColorImg from "@/assets/bordo-color.png";
 import nudeColorImg from "@/assets/nude-color.png";
+import estrelasImg from "@/assets/estrelas.png";
 
 interface Color {
   id: string;
@@ -91,10 +91,8 @@ const LaunchSection = () => {
           {/* Coluna 3 - Product Details */}
           <div className="lg:col-span-1 space-y-6">
             {/* Rating */}
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-gold-accent text-gold-accent" />
-              ))}
+            <div className="h-8">
+              <img src={estrelasImg} alt="5 estrelas" className="h-full w-auto" />
             </div>
 
             {/* Product Name */}
