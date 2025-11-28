@@ -56,35 +56,38 @@ const LaunchSection = () => {
           APROVEITE OS LANÇAMENTOS
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
-          {/* Coluna 1 - Product Images (hidden on mobile) */}
-          <div className="hidden lg:flex flex-col gap-6">
-            <img
-              src={abertoImg}
-              alt="Batom aberto"
-              className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300"
-            />
-            <img
-              src={fechadoImg}
-              alt="Batom fechado"
-              className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300"
-            />
-            <img
-              src={batomImg}
-              alt="Batom detalhe"
-              className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300"
-            />
-          </div>
-
-          {/* Coluna 2 - Main Image */}
-          <div className="lg:col-span-1">
-            <div className="relative rounded-lg overflow-hidden shadow-elegant">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          {/* Coluna 1 - Main Image + Product Images */}
+          <div className="flex flex-col md:flex-row gap-4 items-start">
+            {/* Product Images - Smaller */}
+            <div className="hidden md:flex flex-col gap-3 w-24 shrink-0">
               <img
-                src={selectedColor.lipImage}
-                alt={`Lábios com ${selectedColor.name}`}
-                className="w-full aspect-square object-cover transition-opacity duration-500"
-                key={selectedColor.id}
+                src={abertoImg}
+                alt="Batom aberto"
+                className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105"
               />
+              <img
+                src={fechadoImg}
+                alt="Batom fechado"
+                className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105"
+              />
+              <img
+                src={batomImg}
+                alt="Batom detalhe"
+                className="w-full rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105"
+              />
+            </div>
+            
+            {/* Main Image - Larger and more prominent */}
+            <div className="flex-1">
+              <div className="relative rounded-lg overflow-hidden shadow-elegant">
+                <img
+                  src={selectedColor.lipImage}
+                  alt={`Lábios com ${selectedColor.name}`}
+                  className="w-full aspect-square object-cover transition-opacity duration-500"
+                  key={selectedColor.id}
+                />
+              </div>
             </div>
           </div>
 
