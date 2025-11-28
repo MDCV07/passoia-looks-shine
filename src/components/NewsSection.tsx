@@ -1,4 +1,4 @@
-import bannerImg from "@/assets/banner.png";
+import tendenciaColorImg from "@/assets/tendencia-color.png";
 
 const NewsSection = () => {
   return (
@@ -11,8 +11,8 @@ const NewsSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="relative rounded-lg overflow-hidden shadow-elegant h-[30vh]">
             <img
-              src={bannerImg}
-              alt="Novidades"
+              src={tendenciaColorImg}
+              alt="Novidades em maquiagem"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/30 to-transparent"></div>
